@@ -1,8 +1,6 @@
 import numpy as np
 
-'''
-データの生成
-'''
+
 rng = np.random.RandomState(123)
 
 d = 2
@@ -15,9 +13,7 @@ x2 = rng.randn(N, d) + np.array([mean, mean])
 
 x = np.concatenate((x1, x2), axis=0)
 
-'''
-単純パーセプトロン
-'''
+
 w = np.zeros(d)
 b = 0
 
